@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Mes hobbies</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>MES HOBBIES</h1>
+
+</header>
+
+<div class="container-page">
+
+    <h2>
+        Mes passions
+    </h2>
+
+    <div class="galerie">
+
+        <div class="bloc-hobby">
+
+            <img src="natation.jpg"
+                 alt="Natation"
+                 class="image-hobby">
+
+            <p>
+                Natation
+            </p>
+
+        </div>
+
+        <div class="bloc-hobby">
+
+            <img src="voyage.jpg"
+                 alt="Voyage"
+                 class="image-hobby">
+
+            <p>
+                Voyage
+            </p>
+
+        </div>
+
+        <div class="bloc-hobby">
+
+            <div class="video-container" onclick="playVideo()">
+
+                <img src="chant.jpg"
+                     alt="Chant et performances"
+                     class="image-hobby"
+                     id="imgChant">
+
+                <div class="play-icon" id="playIcon">▶</div>
+
+                <video id="videoChant" class="video-hidden" controls>
+                    <source src="chant.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <p>Musique & Chant</p>
+
+        </div>
+
+    </div>
+
+    <button onclick="ChangerCouleur()">
+       👆
+    </button>
+
+    <a href="index0.html" class="button-style">
+        Retour accueil
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

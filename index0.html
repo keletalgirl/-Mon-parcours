@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mon Parcours - Hafssa Lakhal</title>
+
+    <link rel="shortcut icon" href="photohafssa.jpg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>HAFSSA LAKHAL</h1>
+
+    <p>
+        Apprentie ingénieure Génie Industriel 4.0
+    </p>
+
+</header>
+
+<div class="container-principal">
+
+    <!-- SECTION GAUCHE -->
+
+    <div class="left-section">
+
+        <img src="photohafssa.jpg"
+             class="photo-profil"
+             onclick="AfficherMenu()">
+
+        <h2>
+            Cliquer sur la photo 👆
+        </h2>
+
+        <!-- MENU DÉROULANT -->
+        <div id="menu-deroulant">
+
+            <a href="parcours.html" class="button-style">
+                Mon parcours
+            </a>
+
+            <a href="experience.html" class="button-style">
+                Expériences
+            </a>
+
+            <a href="projet.html" class="button-style">
+                Projets
+            </a>
+
+            <a href="hobbies.html" class="button-style">
+                Hobbies
+            </a>
+
+            <a href="contact.html" class="button-style">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- SECTION DROITE -->
+
+    <div class="right-section">
+
+        <h2>Bienvenue sur mon site personnel</h2>
+
+        <p>
+            Ce site a été réalisé dans le cadre du projet
+            Applications Web Riche.
+        </p>
+
+        <p>
+            Vous allez découvrir mon parcours,
+            mes expériences professionnelles,
+            mes projets,
+            mes compétences et mes passions.
+        </p>
+
+        <div class="citation">
+
+            <h3 id="texteJS">
+                Cliquez sur le bouton pour découvrir mon objectif professionnel.
+            </h3>
+
+            <button onclick="ChangerTexte()">
+                Découvrir
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
