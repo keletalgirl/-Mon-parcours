@@ -167,6 +167,7 @@ header p {
     position: relative;
     overflow: hidden;
     box-shadow: 0 8px 18px rgba(15,23,42,0.18);
+    text-align: center; /* ajoute ça */
 }
 
 .button-style:hover {
@@ -208,7 +209,52 @@ header p {
     font-size: 30px;
     margin-top: 10px;
 }
+/* ===== COMPÉTENCES ===== */
 
+.competences-liste{
+    list-style:none;
+    padding:0;
+    margin:20px 0 35px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:14px 22px;
+}
+
+.competences-liste li{
+    background:rgba(255,255,255,.88);
+    border:1px solid rgba(255,255,255,.8);
+    border-radius:16px;
+    padding:14px 18px;
+    box-shadow:0 8px 20px rgba(15,23,42,.08);
+    font-size:17px;
+    color:#1e293b;
+    transition:.3s;
+    position:relative;
+    padding-left:48px;
+}
+
+.competences-liste li::before{
+    content:"✓";
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:linear-gradient(135deg, lightblue, lightpink);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#0f172a;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.competences-liste li:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(15,23,42,.15);
+}
 /* ===== TABLE ===== */
 .tableau {
     width: 100%;
@@ -250,6 +296,11 @@ header p {
     box-shadow: 0 12px 30px rgba(15,23,42,0.10);
     border: 1px solid rgba(226,232,240,0.9);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.experience-content p {
+    margin: 5px 0 10px 0;
+    font-size: 2px;
+    color: #555;
 }
 
 .experience-box:hover,
@@ -314,6 +365,61 @@ header p {
 
 .projet-box h2 {
     margin-top: 20px;
+}
+.projet-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.projet-text {
+    flex: 1;
+}
+
+.projet-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* LIGHTBOX BACKGROUND */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE AU CENTRE */
+.lightbox-content {
+    background: white;
+    padding: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* BOUTON FERMER */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 /* ===== HOBBIES ===== */

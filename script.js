@@ -13,12 +13,7 @@ function AfficherMenu() {
     }
 }
 
-function ChangerTexte() {
 
-    document.getElementById("texteJS").innerHTML =
-
-    "Mon objectif est de devenir une ingénieure reconnue dans le domaine industriel 🚀";
-}
 
 function ChangerCouleur() {
 

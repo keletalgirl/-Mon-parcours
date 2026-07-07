@@ -22,46 +22,112 @@
 
     <div class="projet-box">
 
+        <div class="projet-text">
 
-        <h2>Projet ergonomie</h2>
+            <h2>Conception d’un dispositif ergonomique</h2>
 
-        <p>
-            Conception 3D d'un réhausseur d'écran ajustable visant à améliorer la posture des utilisateurs et éviter les douleurs cervicales et dorsales liées à une mauvaise position devant l'ordinateur.
-        </p>
+            <p>
+                Conception 3D d'un réhausseur d'écran ajustable visant à améliorer la posture des utilisateurs et éviter les douleurs cervicales et dorsales liées à une mauvaise position devant l'ordinateur.
+            </p>
 
-    </div>
+        </div>
 
-    <div class="projet-box">
-
-      
-
-        <h2>Gestion commandes pizza</h2>
-
-        <p>
-            Développement d'une application avec gestion des bases de données et protocoles réseaux pour améliorer les flux de production et les délais de livraison.
-        </p>
+        <div class="img-wrapper">
+            <img src="ergo.jpg" alt="Projet ergonomie" class="projet-img">
+            <div class="play-button">▶</div>
+        </div>
 
     </div>
 
     <div class="projet-box">
 
-        
+        <div class="projet-text">
 
-        <h2>Analyse des risques - Ligne de production</h2>
+            <h2>Développement d’une application de gestion des commandes</h2>
 
-        <p>
-            Réalisation d'une analyse des risques sur la ligne de production SCAP à l’ENSIBS. Élaboration d'un Document Unique d’Évaluation des Risques et proposition de mesures préventives pour assurer la sécurité des usagers.
-        </p>
+            <p>
+                Développement d'une application avec gestion des bases de données et protocoles réseaux pour améliorer les flux de production et les délais de livraison.
+            </p>
+
+        </div>
+
+        <div class="img-wrapper">
+            <img src="app.jpg" alt="Application commandes" class="projet-img">
+            <div class="play-button">▶</div>
+        </div>
 
     </div>
 
     <div class="projet-box">
 
-        <h2>Développement d’un système de caisse et dashboard de gestion des commandes</h2>
+        <div class="projet-text">
 
-        <p>
-            Développement d’un logiciel de caisse pour la prise de commande et l’encaissement au sein du Mont Smash Burger, afin d’optimiser la gestion en point de vente. Conception et mise en place d’un dashboard connecté via Google Apps Script permettant le suivi en temps réel des commandes.
-        </p>
+            <h2>Analyse des risques industriels – Ligne de production</h2>
+
+            <ul>
+                Réalisation d'une analyse des risques sur une ligne de production SCAP à l’ENSIBS.
+            </ul>
+
+            <ul>
+                Élaboration d'un Document Unique d’Évaluation des Risques et proposition de mesures préventives pour assurer la sécurité des usagers.
+            </ul>
+
+        </div>
+
+        <div class="img-wrapper">
+            <img src="risque.jpg" alt="Analyse risques" class="projet-img">
+            <div class="play-button">▶</div>
+        </div>
+
+    </div>
+
+    <div class="projet-box">
+
+        <div class="projet-text">
+
+            <h2>Digitalisation d’un point de vente : logiciel de caisse & dashboard de pilotage</h2>
+
+            <ul>
+                Développement d’un logiciel de caisse pour la prise de commande et l’encaissement au sein du Mont Smash Burger.
+            </ul>
+
+            <ul>
+                Conception d’un dashboard connecté via Google Apps Script permettant le suivi en temps réel des commandes.
+            </ul>
+
+        </div>
+
+        <div class="img-wrapper">
+            <img src="dashboard.jpg" alt="Dashboard caisse" class="projet-img">
+            <div class="play-button">▶</div>
+        </div>
+
+    </div>
+
+    <div class="projet-box">
+
+        <div class="projet-text">
+
+            <h2>Automatisation industrielle – Siemens S7-1500</h2>
+
+            <ul>
+                Programmation d’un automate Siemens S7-1500 (TIA Portal) en LADDER, GRAPH, FBD et SCL.
+            </ul>
+
+            <ul>
+                Gestion de logiques industrielles avec temporisateurs, compteurs et machines d’états.
+            </ul>
+
+            <ul>
+                Pilotage de systèmes automatisés (LEDs, Andon).
+            </ul>
+
+        </div>
+
+        <div class="img-wrapper">
+            <img src="automate.jpg" alt="Automatisme Siemens" class="projet-img">
+            <div class="play-button">▶</div>
+        </div>
 
     </div>
 
@@ -70,6 +136,36 @@
     </a>
 
 </div>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const images = document.querySelectorAll(".projet-img");
+const closeBtn = document.querySelector(".close");
 
+// Ouvrir lightbox au clic
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+// Fermer avec la croix
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+// Fermer en cliquant dehors
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+</script>
 </body>
 </html>
