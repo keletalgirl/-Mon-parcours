@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
     <meta charset="UTF-8">
@@ -17,7 +18,8 @@
 
 </header>
 
-    <!-- Projet 1 : Ergonomie -->
+<div class="container-page">
+
     <div class="projet-box">
 
         <div class="projet-text">
@@ -29,7 +31,7 @@
             </ul>
 
             <ul>
-                Identification des causes racines des problématiques observées grâce aux outils d’analyse qualité (5M, 5 Pourquoi, QQOQCP).
+                Analyse des risques liés aux troubles musculosquelettiques (TMS) et identification des causes racines grâce aux outils d’analyse qualité (5M, 5 Pourquoi, QQOQCP).
             </ul>
 
             <ul>
@@ -46,7 +48,6 @@
     </div>
 
 
-    <!-- Projet 2 : Application -->
     <div class="projet-box">
 
         <div class="projet-text">
@@ -71,12 +72,11 @@
     </div>
 
 
-    <!-- Projet 3 : Dashboard -->
     <div class="projet-box">
 
         <div class="projet-text">
 
-            <h2>Dashboard de pilotage des commandes</h2>
+            <h2>Dashboard de pilotage des commandes – Le Mont Smash Burger</h2>
 
             <ul>
                 Conception d’un tableau de bord connecté permettant le suivi en temps réel des commandes caisse et Click & Collect.
@@ -100,7 +100,6 @@
     </div>
 
 
-    <!-- Projet 4 : Risques -->
     <div class="projet-box">
 
         <div class="projet-text">
@@ -125,7 +124,6 @@
     </div>
 
 
-    <!-- Projet 5 : Supply Chain -->
     <div class="projet-box">
 
         <div class="projet-text">
@@ -141,13 +139,13 @@
             </ul>
 
             <ul>
-                Conception d’un outil digital pour optimiser le suivi des commandes et la traçabilité des flux.
+                Conception d’un outil digital pour optimiser le suivi des commandes et la traçabilité des flux internes.
             </ul>
 
         </div>
 
         <div class="img-wrapper">
-            <img src="supply.jpg" alt="Automatisation flux" class="projet-img">
+            <img src="automate.jpg" alt="Automatisme Siemens" class="projet-img">
             <div class="play-button">▶</div>
         </div>
 
@@ -159,36 +157,66 @@
     </a>
 
 </div>
+
+
 <!-- LIGHTBOX -->
+
 <div id="lightbox" class="lightbox">
+
     <span class="close">&times;</span>
+
     <img class="lightbox-content" id="lightbox-img">
+
 </div>
+
+
 <script>
+
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const images = document.querySelectorAll(".projet-img");
 const closeBtn = document.querySelector(".close");
 
+
 // Ouvrir lightbox au clic
+
 images.forEach(img => {
+
     img.addEventListener("click", () => {
+
         lightbox.style.display = "flex";
+
         lightboxImg.src = img.src;
+
     });
+
 });
+
 
 // Fermer avec la croix
+
 closeBtn.addEventListener("click", () => {
+
     lightbox.style.display = "none";
+
 });
 
+
 // Fermer en cliquant dehors
+
 lightbox.addEventListener("click", (e) => {
+
     if (e.target === lightbox) {
+
         lightbox.style.display = "none";
+
     }
+
 });
+
 </script>
+
+
 </body>
+
 </html>
