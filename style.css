@@ -1111,18 +1111,17 @@ button:hover {
 
     font-size: 32px;
 
-    color: #1e293b;
+    color: #475569;
 
     margin: 45px 0 25px;
 
     padding-left: 22px;
 
-    font-weight: 800;
+    font-weight: 750;
 
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
 
 }
-
 
 /* Barre décorative à gauche */
 
@@ -1138,13 +1137,13 @@ button:hover {
 
     transform:translateY(-50%);
 
-    width:8px;
+    width:7px;
 
-    height:42px;
+    height:38px;
 
     border-radius:10px;
 
-    background:linear-gradient(135deg, lightblue, lightpink);
+    background:linear-gradient(135deg, #bfdbfe, #fbcfe8);
 
 }
 
