@@ -216,33 +216,51 @@ header p {
     box-shadow: 0 20px 45px rgba(15,23,42,0.10);
 }
 
-.container-page h2 {
-    color: #1e293b;
-    font-size: 30px;
-    margin-top: 10px;
+/* ===== TITRES GENERAUX DES PAGES ===== */
+
+.container-page > h2 {
+
+    color:#1e293b;
+    font-size:38px;
+    font-weight:800;
+    margin:10px 0 35px;
+
 }
+/* ===== COMPÉTENCES ===== */
+
 /* ===== COMPÉTENCES ===== */
 
 .competences-liste{
     list-style:none;
     padding:0;
     margin:20px 0 35px;
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:14px 22px;
+    grid-template-columns:repeat(4, 1fr);
+
+    gap:18px;
 }
 
 .competences-liste li{
+
     background:rgba(255,255,255,.88);
+
     border:1px solid rgba(255,255,255,.8);
+
     border-radius:16px;
-    padding:14px 18px;
+
+    padding:16px 12px 16px 45px;
+
     box-shadow:0 8px 20px rgba(15,23,42,.08);
-    font-size:17px;
+
+    font-size:15px;
+
     color:#1e293b;
+
     transition:.3s;
+
     position:relative;
-    padding-left:48px;
+
 }
 
 .competences-liste li::before{
@@ -1082,14 +1100,21 @@ button:hover {
 }
 /* ===== TITRES COMPETENCES ===== */
 
+/* ===== SOUS TITRES COMPETENCES ===== */
+
 .competences-titre {
 
-    position: relative;
-    font-size: 34px;
-    color: #1e293b;
-    margin: 35px 0 25px;
-    padding-left: 20px;
-    font-weight: 700;
+    position:relative;
+
+    font-size:24px;
+
+    color:#475569;
+
+    margin:30px 0 20px;
+
+    padding-left:18px;
+
+    font-weight:700;
 
 }
 
@@ -1097,16 +1122,75 @@ button:hover {
 .competences-titre::before {
 
     content:"";
+
     position:absolute;
+
     left:0;
+
     top:50%;
+
     transform:translateY(-50%);
 
-    width:8px;
-    height:45px;
+    width:6px;
+
+    height:30px;
 
     background:linear-gradient(135deg, lightblue, lightpink);
 
     border-radius:10px;
+
+}
+@media(max-width:1100px){
+
+    .competences-liste{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .competences-liste{
+        grid-template-columns:1fr;
+    }
+
+}
+/* ===== GRANDS TITRES ===== */
+
+.titre-section {
+
+    font-size:38px;
+
+    font-weight:800;
+
+    color:#1e293b;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+    padding-left:20px;
+
+}
+
+
+.titre-section::before {
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:5px;
+
+    width:8px;
+
+    height:45px;
+
+    border-radius:10px;
+
+    background:linear-gradient(135deg, lightblue, lightpink);
 
 }
