@@ -846,3 +846,164 @@ button:hover {
 
 
 }
+/* ===== NOUVEAU PARCOURS STYLE ===== */
+
+
+.parcours-container{
+
+    display:flex;
+    flex-direction:column;
+    gap:60px;
+
+}
+
+
+
+.parcours-bloc{
+
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+    background:rgba(255,255,255,0.88);
+
+    padding:40px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 45px rgba(15,23,42,.12);
+
+    transition:.35s;
+
+}
+
+
+
+.parcours-bloc:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 55px rgba(15,23,42,.18);
+
+}
+
+
+
+.slider-parcours{
+
+    width:45%;
+
+}
+
+
+
+.slider-parcours img{
+
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 35px rgba(15,23,42,.25);
+
+}
+
+
+
+.parcours-description{
+
+    width:55%;
+
+}
+
+
+
+.parcours-description h2{
+
+    font-size:32px;
+
+    margin-top:15px;
+
+    color:#1e293b;
+
+}
+
+
+
+.parcours-description h3{
+
+    color:#475569;
+
+    font-size:20px;
+
+}
+
+
+
+.parcours-description p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+/* animation changement image */
+
+.fade-image{
+
+    animation:changeImage .8s ease;
+
+}
+
+
+@keyframes changeImage{
+
+    from{
+
+        opacity:.3;
+
+        transform:scale(.97);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+.parcours-bloc{
+
+    flex-direction:column;
+
+}
+
+
+.slider-parcours,
+.parcours-description{
+
+    width:100%;
+
+}
+
+
+}
