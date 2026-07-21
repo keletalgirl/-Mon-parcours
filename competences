@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Mon parcours</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>MON PARCOURS</h1>
+
+</header>
+
+
+
+<div class="container-page">
+
+
+    <div class="intro-parcours">
+
+        <h2>Mon évolution académique</h2>
+
+        <p>
+            Mon parcours m’a permis de construire progressivement une vision
+            globale de l’industrie, en associant sciences, technologies
+            numériques et approche humaine.
+        </p>
+
+        <p>
+            À travers ma formation en Génie Industriel 4.0, je développe des
+            compétences pour accompagner la transformation des entreprises,
+            améliorer les processus et concevoir des solutions adaptées aux
+            besoins des utilisateurs et des équipes terrain.
+        </p>
+
+    </div>
+
+
+
+
+    <div class="timeline">
+
+
+
+        <!-- CYCLE INGENIEUR -->
+
+
+        <div class="parcours-card">
+
+
+            <div class="parcours-image">
+
+                <img src="ensibs.jpg" alt="ENSIBS">
+
+            </div>
+
+
+
+            <div class="parcours-content">
+
+
+                <span class="date">
+                    2025 - 2028
+                </span>
+
+
+                <h2>
+                    Cycle Ingénieur Génie Industriel 4.0
+                </h2>
+
+
+                <h3>
+                    ENSIBS – Université Bretagne Sud
+                </h3>
+
+
+                <p>
+                    Formation d’ingénieur orientée vers les enjeux de
+                    l’industrie du futur : digitalisation des processus,
+                    amélioration continue, qualité, gestion de projets
+                    industriels et optimisation des performances.
+                </p>
+
+
+                <p>
+                    Cette formation intègre une forte dimension humaine :
+                    collaboration avec les équipes terrain, analyse des besoins
+                    utilisateurs, conduite du changement et conception de
+                    solutions adaptées aux réalités industrielles.
+                </p>
+
+
+                <p>
+                    Elle me permet de développer une approche globale de
+                    l’entreprise en reliant les technologies 4.0, les processus
+                    industriels et les acteurs qui les font vivre.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- CYCLE PREPARATOIRE -->
+
+
+        <div class="parcours-card">
+
+
+            <div class="parcours-image">
+
+                <img src="ensibs.jpg" alt="ENSIBS">
+
+            </div>
+
+
+
+            <div class="parcours-content">
+
+
+                <span class="date">
+                    2022 - 2025
+                </span>
+
+
+                <h2>
+                    Cycle préparatoire intégré
+                </h2>
+
+
+                <h3>
+                    ENSIBS – Université Bretagne Sud
+                </h3>
+
+
+                <p>
+                    Acquisition d’un socle scientifique et technique solide
+                    permettant d’intégrer le cycle ingénieur.
+                </p>
+
+
+                <p>
+                    Développement de compétences en mathématiques,
+                    informatique, automatique, électronique et sciences
+                    industrielles à travers des projets et travaux en équipe.
+                </p>
+
+
+                <p>
+                    Cette période m’a également permis de développer mon
+                    autonomie, ma capacité d’analyse et mon aptitude à travailler
+                    dans un environnement collaboratif.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- LYCEE -->
+
+
+        <div class="parcours-card">
+
+
+            <div class="parcours-image">
+
+                <img src="paulva.jpg" alt="Lycée Paul Valéry">
+
+            </div>
+
+
+
+            <div class="parcours-content">
+
+
+                <span class="date">
+                    2021 - 2022
+                </span>
+
+
+                <h2>
+                    Baccalauréat Général – Mention Bien
+                </h2>
+
+
+                <h3>
+                    Lycée Paul Valéry – Meknès, Maroc
+                </h3>
+
+
+                <p>
+                    Formation suivie dans le réseau AEFE
+                    (enseignement français à l’étranger).
+                </p>
+
+
+                <p>
+                    Spécialités :
+                    <strong>Mathématiques</strong> et
+                    <strong>Physique-Chimie</strong>,
+                    avec l’option
+                    <strong>Mathématiques expertes</strong>.
+                </p>
+
+
+                <p>
+                    Cette formation scientifique m’a permis de développer une
+                    capacité de raisonnement logique, d’analyse et de résolution
+                    de problèmes, constituant une base solide pour poursuivre
+                    des études d’ingénieur.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <a href="index0.html" class="button-style">
+        Retour accueil
+    </a>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
