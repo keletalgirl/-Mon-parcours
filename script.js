@@ -148,11 +148,17 @@ let citations = [
     {
         texte:"Ce n’est pas parce que les choses sont difficiles que nous n’osons pas, c’est parce que nous n’osons pas qu’elles sont difficiles.",
         auteur:"Sénèque"
-    }
+    },
+
     {
         texte:"Le travail éloigne de nous trois grands maux : l’ennui, le vice et le besoin",
         auteur:"Voltaire"
     },
+
+    {
+        texte:"Carpe diem",
+        auteur:"Horace"
+    }
 ];
 
 
