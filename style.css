@@ -624,3 +624,225 @@ button:hover {
         height: 270px;
     }
 }
+/* ===== PARCOURS ===== */
+
+
+.intro-parcours {
+    background: rgba(255,255,255,0.85);
+    padding: 25px;
+    border-radius: 22px;
+    margin-bottom: 45px;
+    box-shadow: 0 12px 30px rgba(15,23,42,0.10);
+}
+
+
+.intro-parcours h2 {
+    margin-top:0;
+}
+
+
+
+.intro-parcours p {
+    font-size:18px;
+    line-height:1.7;
+}
+
+
+
+
+.timeline {
+
+    position: relative;
+    padding-left:40px;
+
+}
+
+
+
+.timeline::before {
+
+    content:"";
+    position:absolute;
+    left:15px;
+    top:0;
+    width:4px;
+    height:100%;
+    background:linear-gradient(lightpink,lightblue);
+    border-radius:10px;
+
+}
+
+
+
+
+.parcours-card {
+
+
+    display:flex;
+    align-items:center;
+    gap:35px;
+
+    background:rgba(255,255,255,0.9);
+
+    padding:30px;
+
+    margin-bottom:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(15,23,42,0.12);
+
+    border:1px solid rgba(255,255,255,0.8);
+
+    position:relative;
+
+    transition:0.35s;
+
+
+}
+
+
+
+.parcours-card::before {
+
+    content:"";
+
+    position:absolute;
+
+    left:-35px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,lightpink,lightblue);
+
+    box-shadow:0 0 0 6px white;
+
+
+}
+
+
+
+
+.parcours-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 45px rgba(15,23,42,0.18);
+
+}
+
+
+
+
+
+.parcours-image img {
+
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+    border:5px solid white;
+
+    box-shadow:0 10px 25px rgba(15,23,42,0.2);
+
+
+}
+
+
+
+
+.parcours-content {
+
+    flex:1;
+
+}
+
+
+
+.parcours-content h2 {
+
+    margin-top:10px;
+
+    font-size:28px;
+
+    color:#1e293b;
+
+}
+
+
+
+.parcours-content h3 {
+
+    color:#475569;
+
+}
+
+
+
+.date {
+
+
+    display:inline-block;
+
+    background:linear-gradient(135deg,lightblue,lightpink);
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+    color:#0f172a;
+
+}
+
+
+
+.parcours-content p {
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+.parcours-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+.timeline{
+
+    padding-left:20px;
+
+}
+
+
+.parcours-image img{
+
+    width:150px;
+    height:150px;
+
+}
+
+
+}
