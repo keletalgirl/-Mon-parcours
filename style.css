@@ -58,6 +58,12 @@ header h1,
 header p {
     position: relative;
     z-index: 2;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 18px auto 0;
+    white-space: nowrap;
+    color: rgba(255,255,255,0.85);
 }
 
 header h1 {
