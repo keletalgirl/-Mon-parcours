@@ -17,11 +17,19 @@ function AfficherMenu() {
 
 function ChangerCouleur() {
 
-    var couleurs = ["lightblue", "lightpink", "lightgreen", "lavender", "peachpuff", "mistyrose", "lightyellow"];
+    var couleurs = [
+        "lightblue",
+        "lightpink",
+        "lightgreen",
+        "lavender",
+        "peachpuff",
+        "mistyrose",
+        "lightyellow"
+    ];
 
     var couleurAleatoire = couleurs[Math.floor(Math.random() * couleurs.length)];
 
-    document.body.style.backgroundColor = couleurAleatoire;
+    document.body.style.background = couleurAleatoire;
 }
 
 function playVideo() {
