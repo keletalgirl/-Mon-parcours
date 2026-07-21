@@ -1058,3 +1058,33 @@ button:hover {
 
 
 }
+/* ===== TITRES COMPETENCES ===== */
+
+.competences-titre {
+
+    position: relative;
+    font-size: 34px;
+    color: #1e293b;
+    margin: 35px 0 25px;
+    padding-left: 20px;
+    font-weight: 700;
+
+}
+
+
+.competences-titre::before {
+
+    content:"";
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+
+    width:8px;
+    height:45px;
+
+    background:linear-gradient(135deg, lightblue, lightpink);
+
+    border-radius:10px;
+
+}
