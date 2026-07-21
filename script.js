@@ -127,3 +127,64 @@ img.classList.add("fade-image");
 
 
 },3500);
+
+let citations = [
+
+    {
+        texte:"Je pense, donc je suis",
+        auteur:"René Descartes"
+    },
+
+    {
+        texte:"Ose savoir !",
+        auteur:"Emmanuel Kant"
+    },
+
+    {
+        texte:"L’homme est condamné à être libre.",
+        auteur:"Jean-Paul Sartre"
+    },
+
+    {
+        texte:"Ce n’est pas parce que les choses sont difficiles que nous n’osons pas, c’est parce que nous n’osons pas qu’elles sont difficiles.",
+        auteur:"Sénèque"
+    }
+
+];
+
+
+let indexCitation = 0;
+
+
+setInterval(()=>{
+
+    let bloc = document.getElementById("citationJS");
+
+
+    if(bloc){
+
+        indexCitation++;
+
+        if(indexCitation >= citations.length){
+            indexCitation = 0;
+        }
+
+
+        bloc.style.opacity = 0;
+
+
+        setTimeout(()=>{
+
+            bloc.innerHTML =
+            '"' + citations[indexCitation].texte + '"'
+            + "<br><span>"
+            + citations[indexCitation].auteur
+            + "</span>";
+
+            bloc.style.opacity = 1;
+
+        },500);
+
+    }
+
+},5000);
